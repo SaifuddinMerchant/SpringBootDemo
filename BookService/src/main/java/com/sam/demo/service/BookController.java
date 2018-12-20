@@ -26,7 +26,7 @@ public class BookController {
 	@Value("${app-creator}")
 	String app_creator;
 	
-	@RequestMapping(value="/{author}/book", method=RequestMethod.GET)
+	@RequestMapping(value="/{author}/books", method=RequestMethod.GET)
 	public List<Book> getBookByAuthor(@PathVariable(value="author") String author)
 	{
 		Stopwatch timer = Stopwatch.createStarted();
